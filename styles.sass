@@ -1,0 +1,283 @@
+@import "meyer-reset"
+
+@font-face
+	font-family: Ridley Grotesk Light
+	src: url(ridleygrotesk-light-webfont.woff)
+
+@font-face
+	font-family: Ridley Grotesk Regular
+	src: url(ridleygrotesk-regular-webfont.woff)
+
+@font-face
+	font-family: Ridley Grotesk Semibold
+	src: url(ridleygrotesk-semibold-webfont.woff)
+
+$royalGreen: rgba(52, 120, 0, 1)
+$royalPurple: rgba(52, 16, 82, 1)
+$white: rgba(255, 255, 255, 1)
+$royalBlue: rgba(37, 114, 176, 1)
+$royalBlueHover: rgba(31, 95, 147, 1)
+$royalGold: rgba(222, 162, 20, 1)
+$black: rgba(51, 51, 51, 1)
+$darkGray: rgba(77, 77, 77, 1)
+$medGray: rgba(128, 128, 128, 1)
+$lightGray: rgba(204, 204, 204, 1)
+
+$ridleyLight: Ridley Grotesk Light, Helvetica, sans-serif
+$ridleyReg: Ridley Grotesk Regular, Helvetica, sans-serif
+$ridleySemi: Ridley Grotesk Semibold, Helvetica, sans-serif
+
+html
+	font-size: 62.5%
+
+body 
+	font-family: $ridleyReg
+	font-size: 1.8rem
+	color: $darkGray
+
+h1
+	font-family: $ridleySemi
+	font-size: 3.0rem
+	line-height: 3.6rem
+	color: $black
+	margin-bottom: 20px
+
+h2
+	font-family: $ridleyReg
+	font-size: 2.2rem
+	color: $black
+	margin-bottom: 20px
+
+h3
+	font-family: $ridleyReg
+	font-size: 1.5rem
+	color: $medGray
+	text-transform: uppercase
+	margin-bottom: 15px
+
+p
+	font-family: $ridleyLight
+	color: $darkGray
+	line-height: 2.8rem
+	margin-bottom: 20px
+	font-weight: 100
+
+textarea
+	border: 1px solid $lightGray
+	border-radius: 2px
+	resize: none
+	padding: 20px
+	color: $darkGray
+	font-size: 1.6rem
+	text-align: left
+	transition: border 0.2s
+	&:focus
+		border: 1px solid $royalGold
+		outline: 0px
+
+label
+	display: inline-block
+	font-size: 1.2rem
+	color: $medGray
+	text-transform: uppercase
+	margin: 0px 0px 10px 0px
+
+input[type="email"]
+	width: calc(100% - 20px)
+	border: 1px solid $lightGray
+	border-radius: 2px
+	padding: 10px
+	margin: 0px 0px 15px 0px
+	background: $white
+	color: $black
+	font-family: $ridleyReg
+	font-size: 1.6rem
+	transition: border 0.2s
+	&:focus
+		border: 1px solid $medGray
+		outline: 0px
+
+input[type="text"]
+	width: calc(100% - 20px)	
+	border: 1px solid $lightGray
+	border-radius: 2px
+	padding: 10px
+	margin: 0px 0px 15px 0px
+	background: $white
+	color: $black
+	font-family: $ridleyReg
+	font-size: 1.6rem
+	transition: border 0.2s
+	&:focus
+		border: 1px solid $medGray
+		outline: 0px
+
+input[type="password"]
+	width: calc(100% - 20px)
+	border: 1px solid $lightGray
+	border-radius: 2px
+	padding: 10px
+	margin: 0px 0px 15px 0px
+	background: $white
+	color: $black
+	font-family: $ridleyReg
+	font-size: 1.6rem
+	transition: border 0.2s
+	&:focus
+		border: 1px solid $medGray
+		outline: 0px
+
+input[type="submit"]
+	padding: 12px
+	background: $royalBlue
+	color: $white
+	border-radius: 2px
+	border: 0
+	font-family: $ridleyReg
+	font-size: 1.4rem
+	text-transform: uppercase
+	transition: background 0.2s, box-shadow 0.2s
+	&:hover
+		background: $royalPurple
+		cursor: pointer
+	&:focus
+		outline: 0
+		box-shadow: 0px 0px 5px 0px $medGray
+
+button
+	padding: 12px
+	background: $royalBlue
+	color: $white
+	border-radius: 2px
+	border: 0
+	font-family: $ridleyReg
+	font-size: 1.4rem
+	text-transform: uppercase
+	transition: background 0.2s, box-shadow 0.2s
+	&:hover
+		background: $royalPurple
+		cursor: pointer
+	&:focus
+		outline: 0
+		box-shadow: 0px 0px 5px 0px $medGray
+
+.secondary-button
+	padding: 10px
+	background: none
+	color: $medGray
+	border-radius: 2px
+	border: 2px solid $medGray
+	font-family: $ridleyReg
+	font-size: 1.4rem
+	text-transform: uppercase
+	transition: background 0.2s, box-shadow 0.2s, color 0.2s
+	&:hover
+		background: $medGray
+		cursor: pointer
+		color: $white
+	&:focus
+		outline: 0
+		box-shadow: 0px 0px 5px 0px $medGray
+
+.color-swatches
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	margin-bottom: 30px
+
+.swatch
+	order: 1
+	height: 100px
+	width: 100px
+	margin: 0px 10px 0px 0px
+
+.gold
+	background: $royalGold
+
+.blue
+	background: $royalBlue
+
+.purp
+	background: $royalPurple
+
+.green
+	background: $royalGreen
+
+.black
+	background: $black
+
+.ion-ios-lightbulb
+	margin: 0px 10px 0px 0px
+
+.button-types
+	margin: 0px 0px 20px 0px
+
+.fields
+	width: 40%
+
+
+// SITE STYLES
+
+
+.header
+	height: 100px
+	width: 100%
+	position: fixed
+	top: 0
+	background: $royalPurple
+
+.h1-logo
+	color: $white
+	width: 150px
+	height: 35px
+	padding: 35px 30px 30px 30px
+	margin-bottom: 0px
+	float: left
+
+.main-nav
+	color: $white
+	text-transform: uppercase
+	font-size: 1.4rem
+	float: left
+	height: 20px
+	li
+		padding: 10px 0px 10px 0px
+		float: left
+		min-width: 75px
+		margin: 35px 0px 0px 20px
+		text-align: center
+		border-bottom: 2px solid $royalPurple
+		transition: border-bottom 0.2s
+		&:first-child
+			margin-left: 0px
+		&:hover
+			cursor: pointer
+			border-bottom: 2px solid $royalGold
+
+.main-contain
+	max-width: 960px
+	padding: 0px 30px 0px 30px
+	margin: 130px auto 30px auto
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+
+.avatar
+	order: 1
+	flex-grow: 1
+	height: 75px
+	max-width: 75px
+	min-width: 75px
+	background: $lightGray
+	border-radius: 37.5px
+
+.enter-thought
+	order: 2
+	flex-grow: 2
+	margin-left: 20px
+
+.section-one
+	width: 100%
+	height: 20%
+	border-bottom: 1px solid $lightGray
+
